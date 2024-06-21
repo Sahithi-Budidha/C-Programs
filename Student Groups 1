@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int p,i;
+    scanf("%d",&p);
+    int d=p/4;
+    int x=p-(d+d+d);
+    if(p<100 || p>200) 
+    {
+        printf("INVALID INPUT");
+    }
+    else
+    {
+        for(i=1; i<=3; i++) 
+        {
+            printf("%d\n",d);
+        }
+        printf("%d",x);
+    }
+    return 0;
+}
