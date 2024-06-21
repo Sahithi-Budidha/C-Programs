@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a,b,prod,sum;
+    scanf("%d%d",&a,&b);
+    prod = a*b;
+    sum = a+b;
+    
+    if(prod>1000) {
+        printf("%d",sum);
+    }
+    else {
+        printf("%d",prod);
+    }
+    return 0;
+}
