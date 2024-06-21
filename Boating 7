@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int adults,child,boat;
+    scanf("%d%d%d",&boat,&adults,&child);
+    int adults_weight = 75*adults;
+    int children_weight = 30*child;
+    int w = adults_weight+children_weight;
+    
+    if(boat>w)
+    {
+        printf("Boat is stable");
+    }
+    else
+    {
+        printf("Boat will drown");
+    }
+    
+    return 0;
+}
